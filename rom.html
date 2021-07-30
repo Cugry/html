@@ -36,7 +36,8 @@
 <section>
 
 <h2>About</h2>
-<p>現在主にFlokoROMをビルド・公開しています。ROMの詳細は<a href="https://wiki.maud.io/ja/floko/v4" target="_blank">こちら</a></p>
+<p>現在FlokoROMをビルド・公開しています。ROMの詳細は<a href="https://wiki.maud.io/ja/floko/v4" target="_blank">こちら</a><br>
+ROMにGAPPSは含まれていません。<s>ツリーは人の借りてるし開発してる人ではないので大きな不具合が出ても直せるか知らん</s></p>
 
 <h2>ROM一覧</h2>
 <table class="ta1">
@@ -54,15 +55,24 @@
 <th><a href="URL">Xiaomi Mi10T/Mi10TPro<br>(Apollon)</a></th>
 <th>2021/07/12<br>Android 11(R)</th>
 <td>
-    ■導入方法はこちら<br>
+    ■導入方法は<a href="#Mi10T">こちら</a><br>
     <div style="margin-left:1em; text-indent: -1em;">■USB OTGに不具合があり、exfat形式でフォーマットされたSDカードを読めない<br>
     他のROMでも起きてるのでどうもデバイスツリー側の問題っぽい</div>
+    <div style="margin-left:1em; text-indent: -1em;">■動作確認はMi10Tで行っています。Mi10TProでも問題ないと思います。</div>
+</div>
 </td>
 </tr>
 <tr>
-    <th><a href="URL">Nintendo Switch<br>(icosa_sr)</a></th>
-    <th>2021/07/14<br>Android 10(Q)</th>
-    <td>■Floko v3</td>
+<th><a href="URL">Nintendo Switch<br>(icosa_sr)</a></th>
+<th>2021/07/14<br>Android 10(Q)</th>
+<td>■Floko v3<br>
+    <span class="color1">■RCMモードに入れるいわゆる未対策機で動きます。</span><br>
+    <div style="margin-left:1em; text-indent: -1em;">■変わり種なので導入方法も特殊です。<br>
+    <a href="https://mitanyan98.hatenablog.com/entry/2021/01/12/004536#%E8%BF%BD%E8%A8%9820210112" target="_blank" rel="noopener noreferrer">導入方法は先駆者が詳しく解説してくださっているので投げます。</a><br>
+    基本的にはLineageOSの導入と同じです。代わりにFlokoROMをインストールする形になります。</div>
+    <div style="margin-left:1em; text-indent: -1em;">■SELinuxがPermissiveとなるのでSafetynetを通すのは難しいです。</div>
+</td>
+    
 </tr>
 <!-- 以下テンプレート
 <tr>
@@ -72,33 +82,28 @@
 </tr>
 -->
 
-<!--
-<tr>
-<th>見出し</th>
-<td>ここに説明など入れて下さい。サンプルテキスト。</td>
-</tr>
-<tr>
-<th>見出し</th>
-<td>ここに説明など入れて下さい。サンプルテキスト。</td>
-</tr>
-<tr>
-<th>見出し</th>
-<td>ここに説明など入れて下さい。サンプルテキスト。</td>
-</tr>
-<tr>
-<th>見出し</th>
-<td>ここに説明など入れて下さい。サンプルテキスト。</td>
-</tr>
-<tr>
-<th>見出し</th>
-<td>ここに説明など入れて下さい。サンプルテキスト。</td>
-</tr>
--->
 </table>
 
 </section>
 
-<section id="about">
+<section>
+    <h2 id="Mi10T">Mi10T(Pro)へのインストール方法</h2>
+    <h3>カスタムリカバリ</h3>
+    <p>TWRPは<a href="https://androidfilehost.com/?w=files&flid=319613" target="_blank" rel="noopener noreferrer">こちら</a>の"TWRP_apollo_3.5.0_10-beta_1_whyle.img"を利用してください。<br>
+    メンテナ曰くrecovery領域への直接の書き込みは非推奨らしいので大人しくfastbootが使えるPCと端末を接続して</p>
+    <p><span class="look">fastboot boot TWRP_apollo_3.5.0_10-beta_1_whyle.img</span></p>
+    <p>しましょう。</p>
+
+    <h3>インストールするもの</h3>
+    <p>Firmware→ROM→Gapps→Magiskの順でzipファイルをフラッシュしてください。<br>
+    GappsはNikGappsのbasicまたはcoreを推奨、FrimwareはV12.1.3.0.RJDMIXMを使用してください。<br>
+    ■<a href="https://xiaomifirmwareupdater.com/firmware/apollo/stable/V12.1.3.0.RJDMIXM/" target="_blank" rel="noopener noreferrer">Firmware</a><br>
+    ■<a href="https://sourceforge.net/projects/nikgapps/files/Releases/NikGapps-R/" target="_blank" rel="noopener noreferrer">NikGapps</a>
+
+    </p>
+</section>
+<!--
+    <section id="about">
 
 <h2>当テンプレートについて</h2>
 
@@ -203,6 +208,7 @@ index.htmlのhtmlの上の方にある、<br>
 <p><a href="http://template-party.com/bbs/">サポート掲示板</a>からご質問下さい。対応可能な範囲内でサポートしております。</p>
 </section>
 </div>
+-->
 <!--/contents-->
 
 <footer>
