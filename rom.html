@@ -52,8 +52,8 @@ ROMにGAPPSは含まれていません。<s>ツリーは人の借りてるし開
 <th>備考</th>
 </tr>
 <tr>
-<th><a href="https://drive.google.com/file/d/1k4ebDJ8uAlXC9mYPHZwg14xdJtAq1qLQ/view?usp=sharing" target="_blank" rel="noopener noreferrer">Xiaomi Mi10T/Mi10TPro/Redmi K30S Ultra<br>(Apollon)</a></th>
-<th>2021/07/12<br>Android 11(R)</th>
+<th><a href="https://drive.google.com/drive/folders/1MM0PRKKgNhVyvhGJVh_-SzunM3yxDmEP?usp=sharing" target="_blank" rel="noopener noreferrer">Xiaomi Mi10T/Mi10TPro/Redmi K30S Ultra<br>(Apollon)</a></th>
+<th>2021/08/19<br>Android 11(R)</th>
 <td>
     ■導入方法は<a href="#Apollon">こちら</a><br>
     <div style="margin-left:1em; text-indent: -1em;">■USB OTGに不具合があり、exfat形式でフォーマットされたSDカードを読めない<br>
@@ -110,15 +110,17 @@ ROMにGAPPSは含まれていません。<s>ツリーは人の借りてるし開
 <section>
     <h2 id="Apollon">Xiaomi Mi10T/Mi10TPro/Redmi K30S Ultraへのインストール方法</h2>
     <h3>カスタムリカバリ</h3>
-    <p>TWRPは<a href="https://androidfilehost.com/?w=files&flid=319613" target="_blank" rel="noopener noreferrer">こちら</a>の"TWRP_apollo_3.5.0_10-beta_1_whyle.img"を利用してください。<br>
-    メンテナ曰くrecovery領域への直接の書き込みは非推奨らしいので大人しくfastbootが使えるPCと端末を接続して</p>
-    <p><span class="look">fastboot boot TWRP_apollo_3.5.0_10-beta_1_whyle.img</span></p>
+    <p>TWRPは<a href="https://forum.xda-developers.com/t/recovery-unofficial-3-5-2-apollo-twrp-for-mi-10t-mi-10t-pro-redmi-k30s-ultra.4319809/" target="_blank" rel="noopener noreferrer">こちら</a>を利用してください。<br>
+    fastbootが使えるPCと端末を接続して</p>
+    <p><span class="look">fastboot flash recovery TWRP_3.5.2_10_By_Master.img</span></p>
     <p>しましょう。</p>
 
     <h3>インストールするもの</h3>
     <p>Firmware→ROM→Gapps(→Magisk)の順でzipファイルをフラッシュしてください。<br>
-    GappsはNikGappsのbasicまたはcoreを推奨、FrimwareはV12.1.3.0.RJDMIXMを使用してください。<br>
-    ■<a href="https://xiaomifirmwareupdater.com/firmware/apollo/stable/V12.1.3.0.RJDMIXM/" target="_blank" rel="noopener noreferrer">Firmware</a><br>
+    GappsはNikGappsのbasicまたはcoreを推奨します。<br>
+    <span class="color1">FirmwareはインストールするROMのビルド日時によって変わります。20210712版はV12.1.3.0.RJDMIXM、20210819版はV12.5.2.0.RJDMIXMを使用して下さい。</span>
+    
+    ■<a href="https://xiaomifirmwareupdater.com/firmware/apollo/" target="_blank" rel="noopener noreferrer">Firmware</a><br>
     ■<a href="https://sourceforge.net/projects/nikgapps/files/Releases/NikGapps-R/" target="_blank" rel="noopener noreferrer">NikGapps</a>
 
     </p>
