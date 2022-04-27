@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>テストページ</title>
+
+<style type="text/css">
+</style>
+	
+<script type="text/javascript">
+
+
+function calc()
+{
+	var resultTimesBasic = document.getElementById("resultTimesBasic");
+	var resultTimesMiddle = document.getElementById("resultTimesMiddle");
+	var resultTimesPremium = document.getElementById("resultTimesPremium");
+	
+	var inputDistance = document.getElementById("distance");
+	var inputTime = document.getElementById("time");
+	var inputPersonNum = document.getElementById("personNum");
+	
+	
+	resultTimesBasic.innerHTML = (Number(inputDistance.value) *16 + Math.floor(Number(inputTime.value)/15) * 220 )/ Number(inputPersonNum.value) + "円";
+	resultTimesMiddle.innerHTML = (Number(inputDistance.value) *16 + Math.floor(Number(inputTime.value)/15) * 330 )/ Number(inputPersonNum.value) + "円";
+	resultTimesPremium.innerHTML = (Number(inputDistance.value) *16 + Math.floor(Number(inputTime.value)/15) * 440 )/ Number(inputPersonNum.value) + "円";
+}
+</script>
+	
+</head>
+
+<h1>料金比較テスト</h1>
+<p>
+移動距離<input type="number"id="distance" value="0" min="0" oninput="calc();"><br>
+利用時間<input type="number" id="time" value="15" step="15" min="15" oninput="calc();"><br>
+割り勘人数<input type="number" id="personNum" value="1" min="1" oninput="calc();"><br>
+</p>
+
+<p>タイムズカーシェア(ベーシック)：<span id="resultTimesBasic"></spant></p>
+<p>タイムズカーシェア(ミドル)：<span id="resultTimesMiddle"></spant></p>
+<p>タイムズカーシェア(プレミアム)：<span id="resultTimesPremium"></spant></p>
+
+<p>
+テキストボックスに距離と乗車人数を入力してください。<br>
+乗車人数を2以上にすると割り勘の計算も行われます。<br>
+
+</p>
+
+</body>
+
+</html>
