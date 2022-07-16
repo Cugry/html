@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+.box1{
+  background:#00acee;
+  color: #FFFFFF;
+}
+.box2{
+  background:#3b5998;
+  color: #FFFFFF;
+}
+.box3{
+  background:#616161;
+  color: #FFFFFF;
+}
+.wrap{
+  margin-bottom: 20px;
+  height:100px;
+  
+}
+.box{
+  display:inline-block;
+  font-size: larger;
+  text-align:center;
+  line-height: 50px;
+  width:200px;
+  height:50px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.sharecenter {
+  /* 水平方向の中央揃え */
+  display: flex;
+  justify-content: center;
+}
