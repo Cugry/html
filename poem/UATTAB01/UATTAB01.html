@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>イオシスの例のタブレット - 名称未設定</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="UATTAB01">
+<meta name="keywords" content="検索メタデータ">
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/custom.css">
+<script type="text/javascript" src="../../js/openclose.js"></script>
+<script type="text/javascript" src="../../js/custom.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v14.0" nonce="rBLp7aNx"></script>
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="../../index.html"><img src="../../images/logo.png" alt="Simple Site"></a></h1>
+</header>
+
+<nav id="menubar">
+<ul>
+<li><a href="../../index.html">Home</a></li>
+<li><a href="../../rom.html">Rom</a></li>
+<!--<li><a href="../../other.html">Other</a></li>-->
+</ul>
+</nav>
+
+<div id="contents">
+
+<section id="about">
+
+<h2>イオシスで例のタブレットを買った</h2>
+<p>
+イオシスで2000台以上も入荷したらしい業務タブレット「UATTAB01」を購入した。<br>
+当初5980円で売ってたらしいが、2023年7月購入時には3980円だったので思ったより売れないのだろう。<br>
+開発目的5割、ゴロ寝リモート端末5割目的なのでサイズ感と安さ<del>とネタ</del>で買った。
+</p>
+
+<h3>ファーストインプレッション</h3>
+<p>
+SoCは2020年のKindle　FireHD8 Plusと同じMT8168、RAM2GB、ROM16GB、画面解像度は1200x800と性能はお察しである。<br>
+<a href="https://zigsow.jp/item/366034/review/377334" target="_blank"　rel="noopener　nofollow">どんなものかに</a>
+<a href="https://tekitou-netablog.com/2023/05/uattab001_bought/" target="_blank"　rel="noopener　nofollow">ついてはググれば</a>
+<a href="https://redo495.blog/14000/" target="_blank"　rel="noopener　nofollow">出てくるので割愛。</a>
+microHDMIがついてるのが特徴的か(なお1080pの場合30Hzが限度となる)<br>
+仕様に記載通りGMSは無し。別に無くても良いがあると便利なので早速BLU＆GSIを導入する。
+</p>
+
+<h3>GSI導入</h3>
+<p>
+こちらも導入方法については<a href="https://hatsune39.com/2023/04/11/uattab01_custom/"　rel="noopener　nofollow">解説があるので割愛。</a>GSI周りについてのあれこれを軽くメモ書きする程度で済ましておく。<br>
+いくつかGSIを試したが、この端末で動くGSIはa64と記載のあるGSIのみで、この時点で配布されているGSIの半分ぐらいが非対応である。<br>
+また、<a href="https://github.com/xiaoleGun/treble_build_miku" target="_blank"　rel="noopener　nofollow">Miku-UI</a>がA13のGSIの中で起動まで漕ぎ着けたが、システムUIが無限に落ちまくるので惜しい。<br>
+唯一現行で動くのが<a href="https://sourceforge.net/projects/andyyan-gsi/files/" target="_blank"　rel="noopener　nofollow">Andy Yan氏のA11のLineageOS</a>だったので、こちらを導入した。<br>
+ただしSUがMagiskと競合するので、自分でビルドしたものを使用している。<br>
+<a href="https://sourceforge.net/projects/custom-rom-build-by-cugry/files/GSI/" target="_blank"　rel="noopener　nofollow">ビルドしたものはSourceForgeに上げた。</a>自分は最低Gappsは必要だったが、余計なものはいらなかった(そもそも本体容量も少ない...)のでGo Editionのものを入れた。(ファイル名がboNになっているもの)
+</p>
+
+<h3>動作感</h3>
+<p>
+まあ期待はしていなかったが、カスタムROM入れて快適かと言われると微妙。<del>というかはっきり言って悪い。ま</del>あ販売ページであれだけ注意書きされているし新品で4k円なので文句を言っても仕方無いのだ。<br>
+ただリモートデスクトップの画面用としても微妙で、実際に演算処理sしているのは接続先なのに妙にモッサリしている。<br>
+そしてご多分に漏れず本体から音は出ない。しかしイヤホンジャックは機能している。<br>
+それと地味にmicroHDMIは生きていて、出力自体に問題は無かった。<br>
+ここまでは微妙な反応を書いているが、4k円でリモート操作用に丁度良いサイズの新品の画面が手に入った、と割り切って使用するつもりである。
+</p>
+
+</section>
+
+<!--/contents-->
+
+<footer>
+<small>Copyright&copy; <a href="../../index.html">Cugry</a> All Rights Reserved.</small>
+<span class="pr">《<a href="http://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>
+</footer>
+
+</div>
+<!--/container-->
+
+</body>
+</html>
